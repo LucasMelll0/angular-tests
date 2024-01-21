@@ -19,7 +19,4 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-button {
-  border-radius: var(--defaultRadius);
-  font-size: x-large;
-}
+

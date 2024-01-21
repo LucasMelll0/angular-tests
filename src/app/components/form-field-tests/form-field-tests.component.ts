@@ -5,6 +5,8 @@ import {MatFormField, MatInput, MatInputModule} from "@angular/material/input";
 import {FormsModule} from "@angular/forms";
 import {MatButtonModule} from "@angular/material/button";
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from "@angular/material/form-field";
+import {MatIcon} from "@angular/material/icon";
+import {Router} from "@angular/router";
 
 @Component({
   standalone: true,
@@ -17,6 +19,7 @@ import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from "@angular/material/form-field";
     MatInputModule,
     MatFormField,
     FormsModule,
+    MatIcon,
   ],
   providers: [
     {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {appearance: 'outline'}}
@@ -28,7 +31,7 @@ export class FormFieldTestsComponent {
   message = 'Teste pra inverter a posição';
   formFieldItems: FormFieldData[];
 
-  constructor() {
+  constructor(private router: Router) {
     this.formFieldItems = [
       {placeHolder: 'Campo 1', text: ''},
       {placeHolder: 'Campo 2', text: ''},
@@ -37,6 +40,10 @@ export class FormFieldTestsComponent {
 
   onClickInvert() {
     this.formFieldItems.reverse();
+  }
+
+  onClickBack() {
+    this.router.navigate(['..']).then(r => true)
   }
 }
 

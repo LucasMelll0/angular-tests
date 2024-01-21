@@ -1,15 +1,15 @@
 import {Component} from '@angular/core';
 import {MatButton} from "@angular/material/button";
-import {MatDivider} from "@angular/material/divider";
 import {Router} from "@angular/router";
 import {FORM_FIELD_ROUTE} from "../../app.routes";
+import {MatIcon} from "@angular/material/icon";
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
     MatButton,
-    MatDivider
+    MatIcon,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
