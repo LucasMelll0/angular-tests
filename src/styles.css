@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --text-color: #1C1C1C;
+  --background-color: #f6f6f6;
+  --primaryColor: #22bfee;
+  --defaultRadius: 16px;
+  --largeRadius: 24px;
+}
+
+html, body {
+  height: 100%;
+  color: var(--text-color);
+  background-color: var(--background-color)
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+button {
+  border-radius: var(--defaultRadius);
+  font-size: x-large;
+}

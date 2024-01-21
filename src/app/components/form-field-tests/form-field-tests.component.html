@@ -1,0 +1,16 @@
+<div class="mainContainer">
+  <h1 class="title"> {{ message }}</h1>
+  <form>
+    <mat-form-field class="mat-form-field-appearance-fill">
+      <input matInput placeholder="{{formFieldItems[0].placeHolder}}" [(ngModel)]="formFieldItems[0].text">
+    </mat-form-field>
+    <mat-form-field class="mat-form-field-appearance-fill">
+      <input matInput placeholder="{{formFieldItems[1].placeHolder}}" [(ngModel)]="formFieldItems[1].text">
+    </mat-form-field>
+    <div>
+      <button mat-flat-button class="mat-primary" (click)="onClickInvert()">
+        inverter posição
+      </button>
+    </div>
+  </form>
+</div>

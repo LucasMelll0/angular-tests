@@ -1,0 +1,56 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 50px;
+  justify-content: center;
+  height: calc(100vh - 10vh);
+}
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.textContainer {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+.spanColor {
+  color: transparent;
+  font-size: xxx-large;
+  background-clip: text;
+  background-image: linear-gradient(to right, #67daf9, var(--primaryColor));
+}
+.divider {
+  background-color: var(--primaryColor);
+  opacity: 50%;
+  width: 1px;
+  height: 50vh;
+}
+button {
+  width: 80%;
+  height: 50px;
+  border-radius: var(--defaultRadius);
+  font-size: x-large;
+}
+
+@media(max-width: 900px) {
+  button {
+    width: 80%;
+  }
+  .mainContainer {
+    flex-direction: column;
+  }
+
+
+
+  .divider {
+    visibility: collapse;
+    height: 5vh;
+  }
+}
+
+
+
