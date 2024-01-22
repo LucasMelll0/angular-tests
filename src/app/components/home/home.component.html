@@ -5,8 +5,12 @@
   </div>
   <div class="divider"></div>
   <div class="buttonsContainer">
-    <button mat-flat-button class="mat-primary" (click)="goToDescobrimentos()">
-      DESCOBRIMENTOS
-    </button>
+    <div *ngFor="let item of navButtons;">
+      <button mat-stroked-button class="mat-primary navigation-button"
+              [ngStyle]="{'--bottom-button-margin': navButtons.length > 1 && navButtons.indexOf(item) != navButtons.length - 1 ? '10px' : '0px'}"
+              (click)="item.onClick()">
+        {{ item.text }}
+      </button>
+    </div>
   </div>
 </div>
