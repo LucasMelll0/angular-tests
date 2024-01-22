@@ -37,11 +37,11 @@ export class HomeComponent {
   }
 
   goToFormFieldTests() {
-    this.router.navigate([FORM_FIELD_ROUTE]).then(r => true);
+    this.router.navigate([FORM_FIELD_ROUTE]).then(() => true);
   }
 
   goToHttpRequestTests() {
-    this.router.navigate([HTTP_REQUEST_ROUTE]).then(r => true);
+    this.router.navigate([HTTP_REQUEST_ROUTE]).then(() => true);
   }
 }
 
