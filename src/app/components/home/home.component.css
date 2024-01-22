@@ -4,19 +4,26 @@
   align-items: center;
   margin: 50px;
   justify-content: center;
-  height: calc(100vh - 10vh);
+  height: 90vh;
+  box-shadow:  1px 1px 1px #d9d9d9,
+  -1px -1px 1px #e7e7e7;
+  border-radius: var(--largeRadius);
+  background-color: white;
 }
 .buttonsContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
+  height: 100vh;
+  align-content: center;
+  justify-content: center;
 }
 .textContainer {
   width: 100%;
   align-items: center;
   text-align: center;
-  
+  font-size: large;
 }
 .spanColor {
   color: transparent;
@@ -32,7 +39,7 @@
 }
 button {
   width: 80%;
-  height: 50px;
+  height: 80px;
   border-radius: var(--defaultRadius);
   font-size: x-large;
 }
