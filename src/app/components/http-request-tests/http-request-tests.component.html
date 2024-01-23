@@ -1,1 +1,11 @@
-<p>http-request-tests works!</p>
+<button mat-fab class="mat-primary backButton" (click)="onClickBack()">
+  <mat-icon>arrow_back</mat-icon>
+</button>
+<div class="mainContainer">
+  <h1 class="title">Dogs</h1>
+  <div class="dog-grid">
+    <div *ngFor="let item of dogs" class="dog-grid-item">
+      <img src="{{item.url}}" class="dog-image" alt="cachorro">
+    </div>
+  </div>
+</div>
